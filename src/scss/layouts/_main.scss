@@ -1,0 +1,57 @@
+
+
+main {
+    grid-area: 'main';
+    width: 1fr;
+    @include flex-column;
+    justify-content: space-around;
+
+    @media(max-width: 800px) {
+        gap: 20px;
+    }
+
+    .imgContainer {
+        @include flex-center-center;
+        
+        img {
+            width: 80%;
+        }
+    }
+
+    .sobreFlex {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @media(max-width: 1600px) {
+            margin-left: 10px;
+        }
+
+        h1 {
+            color: $cor-da-logo;
+        }
+
+        @media(max-width: 1600px) {
+            h1 {
+                font-size: 23px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        @media(max-width: 600px) {
+            h1 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 11px;
+            }
+        }
+
+
+
+    }
+}

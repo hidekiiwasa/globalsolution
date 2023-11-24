@@ -1,0 +1,40 @@
+
+aside {
+    @include flex-column;
+    grid-area: 'aside';
+    background-color: #F5A281;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 1fr;
+
+    .asideCaixa {
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        li {
+            list-style-type: none;
+        }
+    }
+    
+    
+    @media (max-width: 1600px) {
+        h2 {
+            font-size: 18px;
+        }
+
+        p, li {
+            font-size: 13px;
+        }
+
+    }
+
+    div {
+        padding: 20px;
+        border-top: 2px solid black;
+    }
+}

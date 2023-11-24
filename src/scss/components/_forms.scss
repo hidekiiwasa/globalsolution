@@ -1,0 +1,56 @@
+form {
+    height: 100%;
+    @include flex-column;
+    @include center-center;
+    gap: 30px;
+
+    legend {
+        font-family: $fonte-do-site;
+        font-size: 32px;
+        font-weight: 600;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 4rem;
+            height: 0.3rem;
+            background-color: $verde-claro;
+            position: absolute;
+            margin: 4px auto;
+            border-radius: 10px;
+       }
+    }
+
+    .inputs {
+        width: 60%;
+        
+        .inputContainer {
+            @include flex-column;
+            gap: 10px;
+            font-family: $fonte-do-site;
+            color: rgba(0, 0, 0, 0.753);
+            font-weight: 600;
+            font-size: 16px;
+
+            input {
+                box-shadow: rgba(0, 0, 0, 0.11) 1px 1px 6px;
+                font-size: 0.8rem;
+                margin: 0.6rem 0px;
+                padding: 0.8rem 1.2rem;
+                border-width: initial;
+                border-style: none;
+                border-color: initial;
+                border-image: initial;
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: #eeeeee75;
+                }
+                
+                &:focus-visible {
+                    outline: 1px solid #63ffa1f1;
+                }
+            }
+        }
+    }
+}

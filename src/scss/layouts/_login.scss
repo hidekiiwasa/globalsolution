@@ -1,0 +1,51 @@
+.corpoContainer {
+    background-color: rgba(12, 12, 233, 0.3);
+    height: calc(100vh - 50px);
+    @include flex-center-center;
+    
+    .loginContainer {
+        height: 80vh;
+        width: 1500px;
+        display: flex;
+
+        @media (max-width: 1600px) {
+            width: 90%;
+            height: 80%;
+        }
+
+        @media (max-width: 1300px) {
+            height: 60vh;
+        }
+
+        .formImage {
+            height: 100%;
+            width: calc(100%/2);
+            background-color: rgba(253, 227, 167, 0.843);
+            @include flex-center-center;
+
+            @media (max-width: 800px) {
+                display: none;
+            }
+
+            img {
+                height: 361px;
+                width: 496px;
+
+                @media (max-width: 1300px) {
+                    width: 80%;
+                    height: 80%;
+                }
+
+                
+            }
+        }
+        .formContainer {
+            width: calc(100%/2);
+            background-color: white;
+
+            @media (max-width: 800px) {
+                width: 100%;
+            }
+        }
+    }
+}

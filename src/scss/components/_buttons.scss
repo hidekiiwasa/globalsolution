@@ -1,0 +1,30 @@
+button, a {
+    background-color: $verde-claro;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: $fonte-do-site;
+}
+
+
+.botaoContainer {
+    width: 60%;
+    
+    button {
+        width: 100%;
+        height: 40px;
+    }
+}
+
+header {
+    button {
+        font-size: 12px;
+    }
+}

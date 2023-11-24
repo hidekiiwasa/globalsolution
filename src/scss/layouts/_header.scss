@@ -1,0 +1,72 @@
+header {
+    background-color: rgb(242, 227, 148);
+    @include flex-center-center;
+    height: 50px;
+    font-family: $fonte-do-site;
+
+    @media(max-width: 600px) {
+        height: 40px;
+    }
+
+    .cabecalhoContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+
+        @media(max-width: 500px) {
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        @media(max-width: 400px) {
+            
+        }
+
+        span {
+            color: $cor-da-logo;
+            font-weight: 600;
+            font-size: 22px;
+
+            @media(max-width: 800px) {
+                font-size: 17px;
+            }
+
+            @media(max-width: 600px) {
+                font-size: 13px;
+            }
+
+            
+        }
+        .usuarioInfo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            height: 100%;
+            
+            @media(max-width: 500px) {
+                width: 50%;
+            }
+
+            @media(max-width: 400px) {
+                width: 82px;
+                p {
+                    display: none;
+                }
+            }
+
+            @media(max-width: 800px) {
+                font-size: 12px;
+            }
+
+            @media(max-width: 600px) {
+                font-size: 10px;
+            }
+
+            p {
+                font-weight: 600;
+            }
+
+        }
+    }
+}
